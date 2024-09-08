@@ -1,0 +1,10 @@
+import random
+import smtplib
+from email.message import EmailMessage
+
+def generate_otp():
+    """Generate a 6-digit random number"""
+    otp = str(random.randint(100000, 999999))
+    return otp
+
+def send_otp_via_email(otp, email_address):
